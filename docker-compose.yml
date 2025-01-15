@@ -1,11 +1,12 @@
 services:
 
+  ## database server name : db
   db:
     image: mariadb
     restart: always
-    environment:
+    environment: 
       MARIADB_ROOT_PASSWORD: example
-
+  ## username : root
   adminer:
     image: adminer
     restart: always
